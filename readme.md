@@ -15,9 +15,6 @@ This API uses a number of open source projects to work properly:
 * [Iris-go] - fast Golang network app framework [iris-go.com]
 * [mongo-go] - mongoDB official drivers for Golang
 
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
 Article link: <https://medium.com/@mirzafaizanejaz/go-lang-mongodb-iris-api-part-1-85024eb2d94d>.
 
 ### Installation
