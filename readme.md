@@ -18,6 +18,8 @@ This API uses a number of open source projects to work properly:
 And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
+Article link: <https://medium.com/@mirzafaizanejaz/go-lang-mongodb-iris-api-part-1-85024eb2d94d>.
+
 ### Installation
 
 This API requires [Golang](https://golang.org/) v1.11+ to run.
