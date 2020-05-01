@@ -5,11 +5,9 @@ import (
 
 	R "github.com/mirzafaizan/gom-api/controllers"
 
-	"github.com/kataras/iris"
-
-	"github.com/kataras/iris/context"
-	"github.com/kataras/iris/middleware/logger"
-	"github.com/kataras/iris/middleware/recover"
+	"github.com/kataras/iris/v12"
+	"github.com/kataras/iris/v12/middleware/logger"
+	"github.com/kataras/iris/v12/middleware/recover"
 )
 
 func main() {
@@ -23,18 +21,18 @@ func main() {
 
 	// Method:   GET Default Endpoint
 	// Resource: http://localhost:8080
-	app.Handle("GET", "/", func(ctx context.Context) {
-		ctx.JSON(context.Map{"message": "Welcome to my API"})
+	app.Get("/", func(ctx iris.Context) {
+		ctx.JSON(iris.Map{"message": "Welcome to my API"})
 	})
 
-	//API end points
+	// API endpoints
 	api := app.Party("/api")
 	{
 		api.Post("/signup", R.CreateUser)
 		api.Post("/login", R.GetUser)
 		api.Get("/getusers", R.GetAllUsers)
-		api.Get("/users/{msisdn: string}", R.GetUser)
+		api.Get("/users/{msisdn}", R.GetUser)
 	}
 
-	app.Run(iris.Addr(os.Getenv("PORT")), iris.WithoutServerError(iris.ErrServerClosed))
+	app.Listen(os.Getenv("PORT"))
 }

@@ -1,5 +1,6 @@
 # GOM-API
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+[![Build Status](https://travis-ci.org/MirzaFaizan/gom-api.svg?branch=master&style=for-the-badge)](https://travis-ci.org/MirzaFaizan/gom-api) [![iris](https://img.shields.io/badge/iris-powered-2196f3.svg?style=for-the-badge)](https://github.com/kataras/iris)
 
 This is a base go lang API with CURD operations with MongoDB
 
@@ -12,14 +13,14 @@ This API uses a number of open source projects to work properly:
 
 * [Golang] - evented operations for the backend
 * [Iris-go] - fast Golang network app framework [iris-go.com]
-* [mongo-go] - mongoDB offical drivers for Golang
+* [mongo-go] - mongoDB official drivers for Golang
 
 And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
 ### Installation
 
-This API requires [Golang](https://golang.org/) v1.10+ to run.
+This API requires [Golang](https://golang.org/) v1.11+ to run.
 
 Install the dependencies and devDependencies and start the server.
 
