@@ -9,7 +9,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-//DB database conenction string
+//DB database connection string
 func DB() *mongo.Client {
 	// Set client options
 	clientOptions := options.Client().ApplyURI("mongodb://127.0.0.1:27017")
